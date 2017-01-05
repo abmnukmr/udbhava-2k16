@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/photo_contact"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp"
+                android:id="@+id/contactname"
+                android:text="ty"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/authui_colorAccent"
+                    app:srcCompat="@drawable/call"
+                    android:text="name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/phoneno_contact"
+                    android:autoLink="all"
+
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <view
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#01232020"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="@color/authui_colorAccent"
+                    app:srcCompat="@drawable/email"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/email_contact"
+                    android:autoLink="all"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

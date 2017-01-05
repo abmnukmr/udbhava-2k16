@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:background="#faeff2f4"
+    android:id="@+id/relet"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.udbhava.Home"
+    android:padding="7dp">
+<android.support.v7.widget.CardView
+    android:layout_width="fill_parent"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="1dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardUseCompatPadding="true"
+    app:cardMaxElevation="1dp"
+    android:layout_height="wrap_content">
+    <com.ramotion.foldingcell.FoldingCell
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/folding_cell"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        ​
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/titleinner"
+                    android:text="crack the CODE"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:background="#34495e"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="1dp"
+                    android:background="#4b161515"/>
+                <!-- event discripyiot -->
+                <com.truizlop.fabreveallayout.FABRevealLayout
+                    android:id="@+id/fab_reveal_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="#29b9b7"
+
+                        app:srcCompat="@drawable/register"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/main_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <HorizontalScrollView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="1dp">
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="360dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/image1"
+                                        />
+                                    <ImageView
+                                        android:layout_width="360dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/image2"/>
+                                    <ImageView
+                                        android:layout_width="360dp"
+                                        android:layout_height="200dp"
+
+                                        android:id="@+id/image3"/>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="1dp"
+                                android:background="#56161515"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="30dp"
+                                    app:srcCompat="@drawable/contact"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="abhmanyu"
+                                    android:id="@+id/contact"
+                                    android:linksClickable="true"
+                                    android:autoLink="all"
+                                    />
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="1dp"
+                                android:background="#2a161515"/>
+                            <ScrollView android:id="@+id/textAreaScroller"
+                                android:layout_width="fill_parent"
+                                android:layout_height="173px"
+                                android:layout_x="0px"
+                                android:layout_y="25px"
+                                android:scrollbars="vertical">
+                                <TextView
+                                    android:id="@+id/about"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="22dp"
+                                    android:lines="20"
+                                    android:text="abhimanyu" />
+                            </ScrollView>
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/secondary_view"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent">
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageButton
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="#00ffffff"
+                                    android:id="@+id/back"
+                                    android:layout_marginRight="8dp"
+
+
+                                    android:layout_marginLeft="290dp"
+                                    android:layout_gravity="top|left"
+
+
+                                    app:srcCompat="@drawable/bacfk"
+                                    />
+
+
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+
+                                    android:paddingRight="@dimen/activity_horizontal_margin"
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/eventname"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Event Name"
+                                        android:id="@+id/eventname"
+                                        android:inputType="text"
+                                        android:imeOptions="actionNext"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/teamname"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Team Name"
+                                        android:id="@+id/teamname"
+                                        android:inputType="text"
+                                        android:imeOptions="actionNext"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/collegename"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="College"
+                                        android:id="@+id/college"
+                                        android:inputType="text"
+                                        android:imeOptions="actionNext"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/emailid"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="email Id(Team Leader)"
+                                        android:id="@+id/email"
+                                        android:inputType="text"
+                                        android:imeOptions="actionNext"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/phone"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Phone no.(Team Leader)"
+                                        android:id="@+id/phoneno"
+                                        android:inputType="phone"
+                                        android:imeOptions="actionNext"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                <com.github.florent37.materialtextfield.MaterialTextField
+                                    android:layout_width="fill_parent"
+                                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+                                    android:layout_height="wrap_content"
+                                    app:mtf_image="@drawable/teammembers"
+                                    app:mtf_cardCollapsedHeight="4dp"
+                                    app:mtf_animationDuration="300"
+                                    app:mtf_labelColor="#ffffff"
+                                    app:mtf_openKeyboardOnFocus="true"
+                                    >
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Members' name"
+                                        android:id="@+id/membersname"
+                                        android:inputType="text"
+                                        android:imeOptions="actionDone"
+                                        android:textColor="#1b1d1c"
+                                        android:textColorHint="#ffffff"
+                                        android:textSize="15sp" />
+
+                                </com.github.florent37.materialtextfield.MaterialTextField>
+                                <Button
+                                    android:layout_width="fill_parent"
+
+                                    android:layout_height="wrap_content"
+                                    android:text="Register"
+                                    android:id="@+id/register"
+                                    android:shadowColor="#000000"
+                                    android:textColor="#2c9681"
+                                    android:background="#fcf9f9"
+                                    android:layout_margin="@dimen/activity_horizontal_margin"
+
+                                    />
+                                </LinearLayout>
+                                 </LinearLayout>
+                        </ScrollView>
+                    </RelativeLayout>
+
+                </com.truizlop.fabreveallayout.FABRevealLayout>
+
+                <!--
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="400dp">
+                -->
+
+
+                <!--
+                                </LinearLayout>
+
+                                </ScrollView>
+
+
+
+            -->
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@mipmap/ev1"
+
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/titleimage"
+                    android:background="#ffffff"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="271dp"
+                android:scrollHorizontally="true"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+                android:id="@+id/upertext"
+                android:layout_marginLeft="25dp"
+                android:textColor="#ffffff"
+
+                android:text="Folding bridge"
+                />
+
+        </FrameLayout>
+    </com.ramotion.foldingcell.FoldingCell>​
+</android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

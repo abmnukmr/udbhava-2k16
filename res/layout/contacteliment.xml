@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container12"
+    android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:id="@+id/card12"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_height="wrap_content"
+        android:background="#817878">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lnr1">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lnr2"
+                android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:civ_border_color="#ceb514"
+                app:civ_border_width="1dp"
+                android:id="@+id/photo_contact"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/lnr3"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingRight="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                   android:textStyle="bold"
+                    android:layout_gravity="center_vertical|right"
+                    android:id="@+id/name_contact"
+                    android:text=""
+                    android:textAlignment="gravity"
+
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desig"
+                    android:textSize="14dp"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="center_vertical|right"
+                    android:autoLink="email|phone|web|map"
+                    android:linksClickable="true"
+                    android:layout_below="@+id/name"
+                    android:layout_alignRight="@+id/name"
+                    android:layout_alignEnd="@+id/name"
+                    />
+            </LinearLayout>
+                </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/border"
+                android:layout_marginTop="10dp"
+                android:background="#46949191"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lnr4">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#817878"
+                    app:srcCompat="@drawable/phone"/>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/border"
+                android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColorLink="#1c7945"
+
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:autoLink="all"
+                android:linksClickable="true"
+                android:id="@+id/phone_contact"/>
+          </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/border2"
+                android:layout_marginLeft="60dp"
+
+                android:background="#41bab8b8"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/lnr5"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#817878"
+                    app:srcCompat="@drawable/email"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                     android:textColorLink="#631c17"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/border"
+                    android:padding="8dp"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:id="@+id/email_contact"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

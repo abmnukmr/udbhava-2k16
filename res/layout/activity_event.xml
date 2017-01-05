@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.udbhava.Event">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs1"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            app:theme="@style/Widget.AppCompat.ActionBar.TabBar"
+            app:pstsDividerColor="#00065bb2"
+            app:pstsUnderlineColor="#00065bb2"
+            app:pstsIndicatorColor="#ffffff"
+            app:pstsIndicatorHeight="3dp"
+            app:pstsScrollOffset="10dp"
+            app:paddingStart="40dp"
+            app:paddingEnd="40dp"
+            app:pstsUnderlineHeight="20dp"
+            app:pstsTabPaddingLeftRight="20dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

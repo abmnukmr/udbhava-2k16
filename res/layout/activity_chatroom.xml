@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.udbhava.Chatroom">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:id="@+id/chattroom"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressarchatroom"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:gravity="bottom"
+    android:layout_height="60dp"
+    android:layout_marginBottom="10dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/messege"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sendbutton"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/send"/>
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:layout_marginTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:id="@+id/card"
+        android:layout_marginLeft="05dp"
+        android:layout_marginRight="05dp"
+        android:layout_height="wrap_content"
+       >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/lnr">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:id="@+id/teamimage"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:fontFamily="sans-sarif-light"
+                android:id="@+id/name"
+                android:text="Nmae"
+
+                android:autoLink="email|phone|web|map"
+                android:linksClickable="true"
+                android:layout_below="@+id/teamimage"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/desig"
+                android:text="uguf"
+
+                android:autoLink="email|phone|web|map"
+                android:linksClickable="true"
+                android:layout_below="@+id/name"
+                android:padding="10dp" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/border"
+                android:background="#FF949191"
+                android:layout_below="@+id/desig"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desig"
+                android:padding="8dp"
+                android:autoLink="email|phone|web|map"
+                android:linksClickable="true"
+                android:id="@+id/about"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

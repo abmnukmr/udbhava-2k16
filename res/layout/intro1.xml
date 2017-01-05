@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.redbooth.WelcomePageLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyTheme"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#18c186"
+
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#00ffffff"
+        app:srcCompat="@drawable/go"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|right"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/bulb"
+        android:layout_marginTop="160dp"
+       android:layout_marginLeft="85dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text1"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:textColor="#32548f"
+        android:textSize="17dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="70dp"
+        android:text="-Witness the extravaganza from 30th September to 2nd October"/>
+
+
+</com.redbooth.WelcomePageLayout>

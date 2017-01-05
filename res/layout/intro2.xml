@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.redbooth.WelcomePageLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyTheme"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#e2ce19">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#00ffffff"
+        app:srcCompat="@drawable/go"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:gravity="bottom|right"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/roket"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="85dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text1"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:textColor="#12265c"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp"
+        android:layout_marginBottom="70dp"
+        android:text="-Enlighten the entrepreneur within you with a fiesta themed around 'Advent of Start-up Culture and Technology in India'"/>
+</com.redbooth.WelcomePageLayout>
